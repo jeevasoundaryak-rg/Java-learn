@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class user_example{
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        String user_name = "name";
+        String user_password = "password";
+        System.out.println("Enter a valid username:");
+        String name = sc.nextLine();
+        System.out.println("Enter a valid password:");
+        String password = sc.nextLine();
+        if(name.equals(user_name) && password.equals(user_password)){
+            System.out.println("Login successful");
+        }else{
+            System.out.println("Login failed");
+        }
+        sc.close();
+    }
+}
